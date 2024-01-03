@@ -431,7 +431,7 @@ var SyntAppConfiguration = /*#__PURE__*/ function() {
     _proto.initGlobalScope = function initGlobalScope() {
         // @ts-ignore
         var snMetadata = window.sn_meta;
-        this.apiKey = snMetadata.app_signature;
+        this.apiKey = snMetadata.installation_key;
         _util_logManager__WEBPACK_IMPORTED_MODULE_0__["default"].getInstance().debug("app-id : ", snMetadata.app_id);
         this.appId = "".concat(snMetadata.app_id);
         this.workerPath = snMetadata.app_worker_path;
